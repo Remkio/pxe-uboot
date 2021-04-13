@@ -1,6 +1,6 @@
 FROM alpine:3.13
 
-RUN apk --nocache add gcompat
+RUN apk --no-cache add gcompat
 
 ENV GCC_ARCH=x86_64
 ENV GCC_CC_ARCH=arm-linux-gnueabihf
