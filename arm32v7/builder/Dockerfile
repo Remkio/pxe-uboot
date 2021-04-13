@@ -1,5 +1,7 @@
 FROM alpine:3.13
 
+RUN apk --nocache add gcompat
+
 ENV GCC_ARCH=x86_64
 ENV GCC_CC_ARCH=arm-linux-gnueabihf
 ENV GCC_LINARO_MAIN_VERSION=6.5-2018.12
