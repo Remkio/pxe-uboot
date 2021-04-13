@@ -9,7 +9,7 @@ ENV CC=${GCC_PATH}/gcc-linaro-${GCC_LINARO_VERSION}-${GCC_ARCH}_${GCC_CC_ARCH}/b
 
 RUN mkdir -p $GCC_PATH; \
     cd $GCC_PATH; \
-    wget -c https://releases.linaro.org/components/toolchain/binaries/${GCC_LINARO_VERSION}/arm-linux-gnueabi/gcc-linaro-${GCC_LINARO_VERSION}-${GCC_ARCH}_${GCC_CC_ARCH}.tar.xz; \
+    wget -c https://releases.linaro.org/components/toolchain/binaries/${GCC_LINARO_VERSION}/${GCC_CC_ARCH}/gcc-linaro-${GCC_LINARO_VERSION}-${GCC_ARCH}_${GCC_CC_ARCH}.tar.xz; \
     tar xf gcc-linaro-${GCC_LINARO_VERSION}-${GCC_ARCH}_${GCC_CC_ARCH}.tar.xz; \
     rm -rf gcc-linaro-${GCC_LINARO_VERSION}-${GCC_ARCH}_${GCC_CC_ARCH}.tar.xz;
 
